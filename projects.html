@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ian Fratarcangeli</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Ian Fratarcangeli</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">My Projects</h1>
+                <p class="page-subtitle">Explore my work in quantitative finance and machine learning</p>
+            </div>
+        </section>
+
+        <section class="projects-content">
+            <div class="container">
+                <div class="project-tabs">
+                    <button class="tab-button active" data-tab="monte-carlo">Monte Carlo Option Pricing</button>
+                    <button class="tab-button" data-tab="lstm-mlp">LSTM-MLP Option Pricing</button>
+                    <button class="tab-button" data-tab="change-point">Change Point Detection</button>
+                    <button class="tab-button" data-tab="rf-trading">RF Trading Algorithm</button>
+                </div>
+
+                <div class="tab-content active" id="monte-carlo">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Monte Carlo Option Pricing</h3>
+                                <p>A sophisticated options pricing model using Monte Carlo simulation techniques. Implements various stochastic processes including geometric Brownian motion and jump-diffusion models for accurate European and American option valuation. The system features parallel processing capabilities, volatility surface modeling, and integration with trading platforms for automated options strategies.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">NumPy</span>
+                                    <span class="tech-tag">SciPy</span>
+                                    <span class="tech-tag">Monte Carlo</span>
+                                    <span class="tech-tag">Stochastic Calculus</span>
+                                    <span class="tech-tag">Multiprocessing</span>
+                                    <span class="tech-tag">Interactive Brokers API</span>
+                                    <span class="tech-tag">Redis</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="lstm-mlp">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>LSTM-MLP Option Pricing</h3>
+                                <p>Hybrid neural network model combining Long Short-Term Memory (LSTM) networks with Multi-Layer Perceptrons for advanced options pricing. Captures both temporal dependencies in market data and complex non-linear relationships for improved prediction accuracy. Includes comprehensive feature engineering, model interpretability tools, and performance evaluation metrics for quantitative research applications.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">Keras</span>
+                                    <span class="tech-tag">LSTM</span>
+                                    <span class="tech-tag">Deep Learning</span>
+                                    <span class="tech-tag">SHAP</span>
+                                    <span class="tech-tag">TensorBoard</span>
+                                    <span class="tech-tag">Jupyter</span>
+                                    <span class="tech-tag">MLflow</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fas fa-file-alt"></i> Research Paper
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="change-point">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Change Point Detection</h3>
+                                <p>Advanced statistical analysis tool for detecting structural breaks and regime changes in time series data. Implements multiple detection algorithms including CUSUM, PELT, and Bayesian methods for identifying significant changes in data patterns and market regimes. Provides interactive visualizations, statistical significance testing, and automated reporting for identifying market regime shifts and trend reversals.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Scikit-learn</span>
+                                    <span class="tech-tag">Ruptures</span>
+                                    <span class="tech-tag">Time Series</span>
+                                    <span class="tech-tag">Statistics</span>
+                                    <span class="tech-tag">Plotly</span>
+                                    <span class="tech-tag">Streamlit</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">Matplotlib</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="rf-trading">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>RF Trading Algorithm</h3>
+                                <p>Random Forest-based trading algorithm that combines multiple technical indicators and market features to generate trading signals. Features robust feature selection, ensemble learning techniques, and comprehensive backtesting framework for strategy validation. Implements real-time data processing, risk management protocols, and performance analytics for systematic trading strategies.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Scikit-learn</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">Random Forest</span>
+                                    <span class="tech-tag">Backtesting</span>
+                                    <span class="tech-tag">Alpaca API</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Docker</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                    <a href="#" class="project-link" target="_blank">
+                                        <i class="fas fa-chart-bar"></i> Performance Report
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Interested in Collaborating?</h2>
+                    <p>I'm always open to new opportunities in quantitative finance and machine learning. Let's work together!</p>
+                    <a href="about.html#contact" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ian Fratarcangeli</h3>
+                    <p>Software Developer passionate about creating innovative solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/IanFratarcangeli" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ian-fratarcangeli" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:ian@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ian Fratarcangeli. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
