@@ -32,7 +32,7 @@ tabButtons.forEach(button => {
     });
 });
 
-// Smooth scrolling for anchor links
+// Smooth scrolling for anchor links (for contact section)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -46,7 +46,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar scroll effect
+// Navbar scroll effect - enhances navbar appearance on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Intersection Observer for animations
+// Intersection Observer for project card animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -73,9 +73,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
+// Observe project cards for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.feature-card, .project-card, .skill-category, .timeline-item');
+    const animatedElements = document.querySelectorAll('.project-card');
     
     animatedElements.forEach(el => {
         el.style.opacity = '0';
@@ -85,23 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Form validation (if you add forms later)
-function validateForm(form) {
-    const inputs = form.querySelectorAll('input[required], textarea[required]');
-    let isValid = true;
-    
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            input.style.borderColor = '#ef4444';
-            isValid = false;
-        } else {
-            input.style.borderColor = '#d1d5db';
-        }
-    });
-    
-    return isValid;
-}
-
 // Add loading animation for buttons
 document.querySelectorAll('.btn').forEach(button => {
     button.addEventListener('click', function(e) {
@@ -110,7 +93,7 @@ document.querySelectorAll('.btn').forEach(button => {
             this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
             this.disabled = true;
             
-            // Reset after 2 seconds (you can adjust this based on your needs)
+            // Reset after 2 seconds
             setTimeout(() => {
                 this.innerHTML = originalText;
                 this.disabled = false;
@@ -130,7 +113,7 @@ document.querySelectorAll('.project-card').forEach(card => {
     });
 });
 
-// Add typing effect for hero title (optional)
+// Add typing effect for hero title (optional enhancement)
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
@@ -146,7 +129,7 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Initialize typing effect on page load
+// Initialize typing effect on page load (desktop only)
 document.addEventListener('DOMContentLoaded', () => {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle && window.innerWidth > 768) {
@@ -155,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Add parallax effect to hero section (optional)
+// Add parallax effect to hero section (optional enhancement)
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
@@ -165,38 +148,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add tooltip functionality for skill tags
-document.querySelectorAll('.skill-tag').forEach(tag => {
-    tag.addEventListener('mouseenter', function() {
-        this.style.transform = 'scale(1.05)';
-        this.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
-    });
-    
-    tag.addEventListener('mouseleave', function() {
-        this.style.transform = 'scale(1)';
-        this.style.boxShadow = 'none';
-    });
-});
-
-// Add search functionality for projects (if needed)
-function filterProjects(searchTerm) {
-    const projectCards = document.querySelectorAll('.project-card');
-    
-    projectCards.forEach(card => {
-        const title = card.querySelector('h3').textContent.toLowerCase();
-        const description = card.querySelector('p').textContent.toLowerCase();
-        const techTags = Array.from(card.querySelectorAll('.tech-tag'))
-            .map(tag => tag.textContent.toLowerCase());
-        
-        const matches = title.includes(searchTerm.toLowerCase()) ||
-                       description.includes(searchTerm.toLowerCase()) ||
-                       techTags.some(tag => tag.includes(searchTerm.toLowerCase()));
-        
-        card.style.display = matches ? 'block' : 'none';
-    });
-}
-
-// Add keyboard navigation for tabs
+// Add keyboard navigation for project tabs
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Tab' && e.target.classList.contains('tab-button')) {
         e.preventDefault();
@@ -218,7 +170,7 @@ document.querySelectorAll('button, a').forEach(element => {
     }
 });
 
-// Add error handling for external links
+// Add visual feedback for external links
 document.querySelectorAll('a[target="_blank"]').forEach(link => {
     link.addEventListener('click', function(e) {
         // Add a small delay to show the user the link is opening
@@ -238,7 +190,7 @@ window.addEventListener('afterprint', () => {
     document.body.classList.remove('printing');
 });
 
-// Add service worker registration (for PWA features)
+// Add service worker registration (for PWA features - optional)
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
