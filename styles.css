@@ -43,13 +43,13 @@ body {
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #d00000;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-logo a:hover {
-    color: #b00000;
+    color: #333333;
 }
 
 .nav-menu {
@@ -59,7 +59,7 @@ body {
 }
 
 .nav-link {
-    color: #333;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -68,7 +68,7 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #d00000;
+    color: #f3f4f6;
 }
 
 .nav-link.active::after {
@@ -78,7 +78,7 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #d00000;
+    background: white;
     border-radius: 1px;
 }
 
@@ -91,7 +91,7 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background: #333;
+    background: white;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -103,7 +103,7 @@ main {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #d00000 0%, #8b0000 100%);
+    background: #6b7280;
     color: white;
     padding: 100px 0;
     min-height: 80vh;
@@ -814,7 +814,7 @@ main {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: #d00000;
         width: 100%;
         text-align: center;
         transition: 0.3s;
