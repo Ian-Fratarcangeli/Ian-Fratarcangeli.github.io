@@ -20,7 +20,7 @@ body {
 
 /* Navigation */
 .navbar {
-    background: #d00000;
+    background: #990909 !important;
     backdrop-filter: none;
     position: fixed;
     top: 0;
@@ -43,13 +43,13 @@ body {
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #000000;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-logo a:hover {
-    color: #333333;
+    color: #f3f4f6;
 }
 
 .nav-menu {
@@ -86,12 +86,15 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    background: #990909;
+    padding: 8px;
+    border-radius: 4px;
 }
 
 .bar {
     width: 25px;
     height: 3px;
-    background: white;
+    background: #990909;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -103,8 +106,8 @@ main {
 
 /* Hero Section */
 .hero {
-    background: #6b7280;
-    color: white;
+    background: white;
+    color: #333;
     padding: 100px 0;
     min-height: 80vh;
     display: flex;
@@ -126,6 +129,7 @@ main {
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.2;
+    color: #333;
 }
 
 .hero-subtitle {
@@ -133,6 +137,7 @@ main {
     font-weight: 500;
     margin-bottom: 1.5rem;
     opacity: 0.9;
+    color: #333;
 }
 
 .hero-description {
@@ -140,6 +145,7 @@ main {
     margin-bottom: 2rem;
     opacity: 0.8;
     line-height: 1.7;
+    color: #333;
 }
 
 .hero-buttons {
@@ -157,13 +163,13 @@ main {
 .hero-placeholder {
     width: 300px;
     height: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #990909;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 5rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: white;
 }
 
 /* Buttons */
@@ -182,35 +188,36 @@ main {
 }
 
 .btn-primary {
-    background: #d00000;
+    background: #990909;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #b00000;
+    background: #990909;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(208, 0, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(153, 9, 9, 0.3);
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
+    background: #990909;
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid #990909;
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: #990909;
+    border-color: #990909;
     transform: translateY(-2px);
 }
 
 .btn-outline {
     background: transparent;
-    color: #d00000;
-    border: 2px solid #d00000;
+    color: #990909;
+    border: 2px solid #990909;
 }
 
 .btn-outline:hover {
-    background: #d00000;
+    background: #990909;
     color: white;
     transform: translateY(-2px);
 }
@@ -252,7 +259,7 @@ main {
 .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #d00000 0%, #8b0000 100%);
+    background: linear-gradient(135deg, #990909 0%, #990909 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -276,14 +283,14 @@ main {
 }
 
 .feature-link {
-    color: #d00000;
+    color: #990909;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .feature-link:hover {
-    color: #b00000;
+    color: #990909;
 }
 
 /* CTA Section */
@@ -315,7 +322,7 @@ main {
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(135deg, #d00000 0%, #8b0000 100%);
+    background: linear-gradient(135deg, #a09b9b 0%, #a09b9b 100%);
     color: white;
     padding: 80px 0;
     text-align: center;
@@ -396,7 +403,7 @@ main {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: #d00000;
+    color: #990909;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -404,7 +411,7 @@ main {
 }
 
 .contact-links a:hover {
-    color: #b00000;
+    color: #990909;
 }
 
 .contact-links i {
@@ -421,7 +428,7 @@ main {
 .profile-placeholder {
     width: 250px;
     height: 250px;
-    background: linear-gradient(135deg, #d00000 0%, #8b0000 100%);
+    background: linear-gradient(135deg, #990909 0%, #990909 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -504,7 +511,7 @@ main {
     top: 0;
     width: 20px;
     height: 20px;
-    background: #d00000;
+    background: #990909;
     border-radius: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -532,7 +539,7 @@ main {
 }
 
 .timeline-company {
-    color: #d00000;
+    color: #990909;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
@@ -586,7 +593,7 @@ main {
 
 .contact-method i {
     font-size: 1.5rem;
-    color: #d00000;
+    color: #990909;
     width: 40px;
 }
 
@@ -597,13 +604,13 @@ main {
 }
 
 .contact-method a {
-    color: #d00000;
+    color: #990909;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-method a:hover {
-    color: #b00000;
+    color: #990909;
 }
 
 /* Projects Page */
@@ -632,9 +639,9 @@ main {
 
 .tab-button:hover,
 .tab-button.active {
-    background: #d00000;
+    background: #990909;
     color: white;
-    border-color: #d00000;
+    border-color: #990909;
 }
 
 .tab-content {
@@ -666,7 +673,7 @@ main {
 
 .project-image {
     height: 200px;
-    background: linear-gradient(135deg, #d00000 0%, #8b0000 100%);
+    background: linear-gradient(135deg, #990909 0%, #990909 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -717,7 +724,7 @@ main {
 }
 
 .project-link {
-    color: #d00000;
+    color: #990909;
     text-decoration: none;
     font-weight: 500;
     display: flex;
@@ -727,7 +734,7 @@ main {
 }
 
 .project-link:hover {
-    color: #b00000;
+    color: #990909;
 }
 
 /* Footer */
@@ -792,7 +799,7 @@ main {
 }
 
 .social-links a:hover {
-    background: #d00000;
+    background: #990909;
     transform: translateY(-2px);
 }
 
@@ -814,7 +821,7 @@ main {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: #d00000;
+        background-color: #990909;
         width: 100%;
         text-align: center;
         transition: 0.3s;
