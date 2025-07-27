@@ -47,7 +47,7 @@
                     <button class="tab-button active" data-tab="monte-carlo">Monte Carlo Option Pricing</button>
                     <button class="tab-button" data-tab="lstm-mlp">LSTM-MLP Option Pricing</button>
                     <button class="tab-button" data-tab="change-point">Change Point Detection</button>
-                    <button class="tab-button" data-tab="rf-trading">RF Trading Algorithm</button>
+                    <button class="tab-button" data-tab="rf-trading">Trading Algorithms</button>
                 </div>
 
                 <div class="tab-content active" id="monte-carlo">
@@ -61,14 +61,14 @@
                             <div class="project-content">
                                 <h3>Monte Carlo Option Pricing</h3>
                                 <p>A sophisticated options pricing model using Monte Carlo simulation techniques. 
-                                    Implements various stochastic processes including geometric Brownian motion and Heston model 
+                                    Implements Geometric Brownian motion (GBM) and Heston model stochastic processes 
                                     for accurate European option valuation. </p>
                                 <div class="project-tech">
                                     <span class="tech-tag">Python</span>
                                     <span class="tech-tag">NumPy</span>
-                                    <span class="tech-tag">SciPy</span>
                                     <span class="tech-tag">Monte Carlo</span>
                                     <span class="tech-tag">Stochastic Calculus</span>
+                                    <span class="tech-tag">yfinance</span>
                                 </div>
                                 <div class="project-links">
                                     <a href="https://montecarlo-zj8xdtlhqmo2dc4652zn94.streamlit.app/" class="project-link" target="_blank">
@@ -93,27 +93,23 @@
                             </div>
                             <div class="project-content">
                                 <h3>LSTM-MLP Option Pricing</h3>
-                                <p>Hybrid neural network model combining Long Short-Term Memory (LSTM) networks with Multi-Layer Perceptrons for advanced options pricing. Captures both temporal dependencies in market data and complex non-linear relationships for improved prediction accuracy. Includes comprehensive feature engineering, model interpretability tools, and performance evaluation metrics for quantitative research applications.</p>
+                                <p>Hybrid neural network model combining Long Short-Term Memory (LSTM) 
+                                    networks with Multi-Layer Perceptrons (MLP) for advanced options pricing. 
+                                    Captures temporal dependencies in market data and couples it with contract features for improved prediction accuracy. 
+                                    Includes comprehensive data processing, training, and performance evaluation metrics.</p>
                                 <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">TensorFlow</span>
-                                    <span class="tech-tag">Keras</span>
+                                    <span class="tech-tag">PyTorch</span>
                                     <span class="tech-tag">LSTM</span>
                                     <span class="tech-tag">Deep Learning</span>
-                                    <span class="tech-tag">SHAP</span>
-                                    <span class="tech-tag">TensorBoard</span>
-                                    <span class="tech-tag">Jupyter</span>
-                                    <span class="tech-tag">MLflow</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">yfinance</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="#" class="project-link" target="_blank">
+                                    <a href="https://lstmmlp-ngiaqzssrbfqgkfbbvsmpz.streamlit.app/" class="project-link" target="_blank">
                                         <i class="fas fa-external-link-alt"></i> Live Demo
                                     </a>
-                                    <a href="#" class="project-link" target="_blank">
+                                    <a href="https://github.com/Ian-Fratarcangeli/lstm_mlp" class="project-link" target="_blank">
                                         <i class="fab fa-github"></i> Source Code
-                                    </a>
-                                    <a href="#" class="project-link" target="_blank">
-                                        <i class="fas fa-file-alt"></i> Research Paper
                                     </a>
                                 </div>
                             </div>
@@ -131,23 +127,21 @@
                             </div>
                             <div class="project-content">
                                 <h3>Change Point Detection</h3>
-                                <p>Advanced statistical analysis tool for detecting structural breaks and regime changes in time series data. Implements multiple detection algorithms including CUSUM, PELT, and Bayesian methods for identifying significant changes in data patterns and market regimes. Provides interactive visualizations, statistical significance testing, and automated reporting for identifying market regime shifts and trend reversals.</p>
+                                <p>Advanced statistical analysis tool for detecting regime changes in time series data. 
+                                    Implements the CUSUM detection algorithm on equity prices for identifying distributional shifts in the market using both
+                                    kernel and likelihood based methods. 
+                                    Provides interactive visualizations of change points. </p>
                                 <div class="project-tech">
                                     <span class="tech-tag">Python</span>
                                     <span class="tech-tag">Scikit-learn</span>
-                                    <span class="tech-tag">Ruptures</span>
-                                    <span class="tech-tag">Time Series</span>
-                                    <span class="tech-tag">Statistics</span>
-                                    <span class="tech-tag">Plotly</span>
-                                    <span class="tech-tag">Streamlit</span>
                                     <span class="tech-tag">Pandas</span>
-                                    <span class="tech-tag">Matplotlib</span>
+                                    <span class="tech-tag">yfinance</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="#" class="project-link" target="_blank">
+                                    <a href="https://6yfhhju9iwm6g7wrtfj2ao.streamlit.app/" class="project-link" target="_blank">
                                         <i class="fas fa-external-link-alt"></i> Live Demo
                                     </a>
-                                    <a href="#" class="project-link" target="_blank">
+                                    <a href="https://github.com/Ian-Fratarcangeli/cpd" class="project-link" target="_blank">
                                         <i class="fab fa-github"></i> Source Code
                                     </a>
                                 </div>
@@ -165,17 +159,10 @@
                                 </div>
                             </div>
                             <div class="project-content">
-                                <h3>RF Trading Algorithm</h3>
-                                <p>Random Forest-based trading algorithm that combines multiple technical indicators and market features to generate trading signals. Features robust feature selection, ensemble learning techniques, and comprehensive backtesting framework for strategy validation. Implements real-time data processing, risk management protocols, and performance analytics for systematic trading strategies.</p>
+                                <h3>Trading Algorithms</h3>
+                                <p>Coming soon!!!</p>
                                 <div class="project-tech">
                                     <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Scikit-learn</span>
-                                    <span class="tech-tag">Pandas</span>
-                                    <span class="tech-tag">Random Forest</span>
-                                    <span class="tech-tag">Backtesting</span>
-                                    <span class="tech-tag">Alpaca API</span>
-                                    <span class="tech-tag">PostgreSQL</span>
-                                    <span class="tech-tag">Docker</span>
                                 </div>
                                 <div class="project-links">
                                     <a href="#" class="project-link" target="_blank">
@@ -183,9 +170,6 @@
                                     </a>
                                     <a href="#" class="project-link" target="_blank">
                                         <i class="fab fa-github"></i> Source Code
-                                    </a>
-                                    <a href="#" class="project-link" target="_blank">
-                                        <i class="fas fa-chart-bar"></i> Performance Report
                                     </a>
                                 </div>
                             </div>
