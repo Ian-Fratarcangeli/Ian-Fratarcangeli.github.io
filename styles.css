@@ -701,6 +701,13 @@ main {
     line-height: 1.6;
 }
 
+.project-img {
+    width: 100%;       /* fills the container */
+    height: auto;      /* maintains aspect ratio */
+    border-radius: 8px; /* optional rounding */
+    object-fit: cover; /* optional for cropping */
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;
@@ -732,6 +739,7 @@ main {
     gap: 0.5rem;
     transition: color 0.3s ease;
 }
+
 
 .project-link:hover {
     color: #990909;
