@@ -860,6 +860,12 @@ main {
         height: 200px;
         font-size: 3rem;
     }
+    .hero-img {
+        width: 100%;       /* fills the container */
+        height: auto;      /* maintains aspect ratio */
+        border-radius: 8px; /* optional rounding */
+        object-fit: cover; /* optional for cropping */
+    }
 
     .about-grid {
         grid-template-columns: 1fr;
