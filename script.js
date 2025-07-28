@@ -192,3 +192,14 @@ if ('serviceWorker' in navigator) {
             });
     });
 } 
+
+function copyEmail() {
+    const email = "hadrian.fratarcangeli@stonybrook.edu";
+    navigator.clipboard.writeText(email).then(function() {
+      const confirmation = document.getElementById("copy-confirmation");
+      confirmation.style.display = "inline";
+      setTimeout(() => confirmation.style.display = "none", 2000);
+    }, function(err) {
+      console.error("Failed to copy email: ", err);
+    });
+  }
