@@ -153,11 +153,23 @@ main {
     gap: 1rem;
     flex-wrap: wrap;
 }
-
+  
+  /* HERO IMAGE */
 .hero-image {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0;
+}
+  
+.hero-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;  /* Optional */
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .hero-placeholder {
@@ -419,10 +431,22 @@ main {
     width: 20px;
 }
 
+/* ABOUT IMAGE */
 .about-image {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+}
+  
+.about-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;  /* Optional: circular profile image */
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-placeholder {
@@ -670,13 +694,19 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
-
-.project-image {
-    height: 200px;
-    background: linear-gradient(135deg, #990909 0%, #990909 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.project-image img {
+    width: 100%;              /* Takes up full width of its container */
+    max-width: 800px;         /* Prevents getting too wide */
+    height: 300px;            /* Keeps it from getting too tall */
+    object-fit: cover;        /* Crop nicely if needed */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;           /* Centers image inside container */
+}
+  
+.project-img {
+    text-align: center;       /* Center content inside image wrapper */
+    margin-bottom: 1rem;
 }
 
 .project-placeholder {
@@ -859,12 +889,6 @@ main {
         width: 200px;
         height: 200px;
         font-size: 3rem;
-    }
-    .hero-img {
-        width: 100%;       /* fills the container */
-        height: auto;      /* maintains aspect ratio */
-        border-radius: 8px; /* optional rounding */
-        object-fit: cover; /* optional for cropping */
     }
 
     .about-grid {
